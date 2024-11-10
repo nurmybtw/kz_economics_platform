@@ -1,0 +1,182 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\Nurlan\Desktop\case championship\code.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}10 Nov 2024, 20:53:57
+
+{com}. import excel "C:\Users\Nurlan\Downloads\dataset2022.xlsx", sheet("1") firstrow
+{res}{text}(25 vars, 21 obs)
+
+{com}. describe
+
+{txt}Contains data
+ Observations:{res}            21                  
+{txt}    Variables:{res}            25                  
+{txt}{hline}
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+{hline}
+{p 0 48}{res}{bind:Region         }{txt}{bind: str43   }{bind:%43s      }{space 1}{bind:         }{bind:  }{res}{res}Region{p_end}
+{p 0 48}{bind:Total          }{txt}{bind: double  }{bind:%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Total{p_end}
+{p 0 48}{bind:Agriculturefo~r}{txt}{bind: double  }{bind:%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Agriculture, forestry and fishiries{p_end}
+{p 0 48}{bind:Industry       }{txt}{bind: double  }{bind:%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Industry{p_end}
+{p 0 48}{bind:Miningandquar~g}{txt}{bind: double  }{bind:%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Mining and quarrying{p_end}
+{p 0 48}{bind:Manufacturing~y}{txt}{bind: double  }{bind:%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Manufacturing industry{p_end}
+{p 0 48}{bind:Supplyofelect~a}{txt}{bind: double  }{bind:%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Supply of electricity, gas, steam, hot water and air conditioning{p_end}
+{p 0 48}{bind:Watersupplywa~n}{txt}{bind: double  }{bind:%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Water supply; waste collection, treatment and disposal, pollution control activi{p_end}
+{p 0 48}{bind:Construction   }{txt}{bind: double  }{bind:%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Construction{p_end}
+{p 0 48}{bind:Wholesaleandr~a}{txt}{bind: double  }{bind:%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Wholesale and retail trade; repair of cars and motorcycles{p_end}
+{p 0 48}{bind:Transportandw~g}{txt}{bind: double  }{bind:%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Transport and warehousing{p_end}
+{p 0 48}{bind:Accommodation~i}{txt}{bind: double  }{bind:%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Accommodation and catering services{p_end}
+{p 0 48}{bind:Informationan~n}{txt}{bind: double  }{bind:%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Information and communication{p_end}
+{p 0 48}{bind:Financialandi~i}{txt}{bind: double  }{bind:%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Financial and insurance activities{p_end}
+{p 0 48}{bind:Realestatetra~s}{txt}{bind: double  }{bind:%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Real estate transactions{p_end}
+{p 0 48}{bind:Professionals~c}{txt}{bind: double  }{bind:%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Professional, scientific and technical activities{p_end}
+{p 0 48}{bind:Administrativ~i}{txt}{bind: double  }{bind:%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Administrative and support services activities{p_end}
+{p 0 48}{bind:Publicadminis~s}{txt}{bind: double  }{bind:%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Public administration and defense; compulsory social security{p_end}
+{p 0 48}{bind:Education      }{txt}{bind: double  }{bind:%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Education{p_end}
+{p 0 48}{bind:Publichealtha~e}{txt}{bind: double  }{bind:%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Public health and social services{p_end}
+{p 0 48}{bind:Artentertainm~o}{txt}{bind: double  }{bind:%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Art, entertainment and recreation{p_end}
+{p 0 48}{bind:Provisionofot~v}{txt}{bind: double  }{bind:%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Provision of other types of services{p_end}
+{p 0 48}{bind:GDP            }{txt}{bind: double  }{bind:%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}GDP{p_end}
+{p 0 48}{bind:Unemploymentr~e}{txt}{bind: double  }{bind:%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Unemployment rate{p_end}
+{p 0 48}{bind:Population     }{txt}{bind: long    }{bind:%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Population{p_end}
+{txt}{hline}
+Sorted by: 
+     Note: {res}Dataset has changed since last saved.
+
+{com}. summarize
+
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 6}Region {c |}{res}          0
+{txt}{space 7}Total {c |}{res}         21    1.63e+07    3.60e+07    2474462   1.71e+08
+{txt}Agricultur~r {c |}{res}         21     1068251     2365768       8028   1.12e+07
+{txt}{space 4}Industry {c |}{res}         21     5719150    1.28e+07   330873.2   6.01e+07
+{txt}Miningandq~g {c |}{res}         21     2776619     6644787          0   2.92e+07
+{txt}{hline 13}{c +}{hline 57}
+Manufactur~y {c |}{res}         21     2584364     5741657   258748.6   2.71e+07
+{txt}Supplyofel~a {c |}{res}         21    298654.5    661323.6    39115.1    3135872
+{txt}Watersuppl~n {c |}{res}         21    59512.72    133681.5     4302.8   624883.6
+{txt}Construction {c |}{res}         21     1049805     2320753   194453.6   1.10e+07
+{txt}Wholesalea~a {c |}{res}         21     2299907     5301062    86225.7   2.41e+07
+{txt}{hline 13}{c +}{hline 57}
+Transporta~g {c |}{res}         21     1036540     2286289   117751.9   1.09e+07
+{txt}Accommodat~i {c |}{res}         21    180560.5    414649.5    13466.9    1895885
+{txt}Informatio~n {c |}{res}         21    261217.5      659663     3462.5    2742784
+{txt}Financiala~i {c |}{res}         21    626740.1     1594108    15877.9    6580771
+{txt}Realestate~s {c |}{res}         21     1107840     2503232    42090.3   1.16e+07
+{txt}{hline 13}{c +}{hline 57}
+Profession~c {c |}{res}         21    468195.4     1126811    10316.8    4916052
+{txt}Administra~i {c |}{res}         21    346782.7    804824.3    15374.4    3641218
+{txt}Publicadmi~s {c |}{res}         21    421751.4    927970.9    40964.7    4428390
+{txt}{space 3}Education {c |}{res}         21    612679.4     1346271    59344.3    6433133
+{txt}Publicheal~e {c |}{res}         21      524291     1161430    37786.6    5505056
+{txt}{hline 13}{c +}{hline 57}
+Artenterta~o {c |}{res}         21    176887.8      418606     7146.9    1857321
+{txt}Provisiono~v {c |}{res}         21    378131.4    925434.9    15718.6    3970380
+{txt}{space 9}GDP {c |}{res}         21     9882430    2.19e+07    1426882   1.04e+08
+{txt}Unemployme~e {c |}{res}         21    4.852381    .2227533        4.3        5.2
+{txt}{space 2}Population {c |}{res}         21     1857444     4070009     220913   1.95e+07
+
+{com}. gen Socialsphere = Publichealthandsocialservice+ Publicadministrationanddefens+ Education+ Artentertainmentandrecreatio
+
+. summarize Transportandwarehousing Supplyofelectricitygasstea Socialsphere
+
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
+{hline 13}{c +}{hline 57}
+Transporta~g {c |}{res}         21     1036540     2286289   117751.9   1.09e+07
+{txt}Supplyofel~a {c |}{res}         21    298654.5    661323.6    39115.1    3135872
+{txt}Socialsphere {c |}{res}         21     1735610     3824854   145242.5   1.82e+07
+
+{com}. correlate Transportandwarehousing Supplyofelectricitygasstea Socialsphere GDP Population Unemploymentrate
+{txt}(obs=21)
+
+             {c |} Transp~g Supply~a Social~e      GDP Popula~n Unempl~e
+{hline 13}{c +}{hline 54}
+Transporta~g {c |}{res}   1.0000
+{txt}Supplyofel~a {c |}{res}   0.9793   1.0000
+{txt}Socialsphere {c |}{res}   0.9946   0.9771   1.0000
+         {txt}GDP {c |}{res}   0.9962   0.9752   0.9905   1.0000
+  {txt}Population {c |}{res}   0.9906   0.9795   0.9961   0.9850   1.0000
+{txt}Unemployme~e {c |}{res}   0.0481   0.0093   0.0553   0.0334   0.0830   1.0000
+
+
+{com}. regress Transportandwarehousing GDP Population Unemploymentrate
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}        21
+{txt}{hline 13}{c +}{hline 34}   F(3, 17)        = {res}  1223.26
+{txt}       Model {c |} {res} 1.0406e+14         3  3.4687e+13   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 4.8205e+11        17  2.8356e+10   {txt}R-squared       ={res}    0.9954
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.9946
+{txt}       Total {c |} {res} 1.0454e+14        20  5.2271e+12   {txt}Root MSE        =   {res} 1.7e+05
+
+{txt}{hline 17}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}Transportandwa~g{col 18}{c |} Coefficient{col 30}  Std. err.{col 42}      t{col 50}   P>|t|{col 58}     [95% con{col 71}f. interval]
+{hline 17}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 13}GDP {c |}{col 18}{res}{space 2} .0716066{col 30}{space 2} .0103656{col 41}{space 1}    6.91{col 50}{space 3}0.000{col 58}{space 4} .0497372{col 71}{space 3} .0934761
+{txt}{space 6}Population {c |}{col 18}{res}{space 2} .1762205{col 30}{space 2} .0560478{col 41}{space 1}    3.14{col 50}{space 3}0.006{col 58}{space 4}   .05797{col 71}{space 3}  .294471
+{txt}Unemploymentrate {c |}{col 18}{res}{space 2}-8954.954{col 30}{space 2} 176762.9{col 41}{space 1}   -0.05{col 50}{space 3}0.960{col 58}{space 4}  -381892{col 71}{space 3} 363982.1
+{txt}{space 11}_cons {c |}{col 18}{res}{space 2} 45025.33{col 30}{space 2} 857243.2{col 41}{space 1}    0.05{col 50}{space 3}0.959{col 58}{space 4} -1763600{col 71}{space 3}  1853650
+{txt}{hline 17}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. regress Supplyofelectricitygasstea GDP Population Unemploymentrate
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}        21
+{txt}{hline 13}{c +}{hline 34}   F(3, 17)        = {res}   162.38
+{txt}       Model {c |} {res} 8.4520e+12         3  2.8173e+12   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 2.9495e+11        17  1.7350e+10   {txt}R-squared       ={res}    0.9663
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.9603
+{txt}       Total {c |} {res} 8.7470e+12        20  4.3735e+11   {txt}Root MSE        =   {res} 1.3e+05
+
+{txt}{hline 17}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}Supplyofelectr~a{col 18}{c |} Coefficient{col 30}  Std. err.{col 42}      t{col 50}   P>|t|{col 58}     [95% con{col 71}f. interval]
+{hline 17}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 13}GDP {c |}{col 18}{res}{space 2} .0075578{col 30}{space 2} .0081082{col 41}{space 1}    0.93{col 50}{space 3}0.364{col 58}{space 4} -.009549{col 71}{space 3} .0246646
+{txt}{space 6}Population {c |}{col 18}{res}{space 2} .1198253{col 30}{space 2} .0438418{col 41}{space 1}    2.73{col 50}{space 3}0.014{col 58}{space 4} .0273271{col 71}{space 3} .2123235
+{txt}Unemploymentrate {c |}{col 18}{res}{space 2}-179016.5{col 30}{space 2} 138267.9{col 41}{space 1}   -1.29{col 50}{space 3}0.213{col 58}{space 4}-470736.3{col 71}{space 3} 112703.2
+{txt}{space 11}_cons {c |}{col 18}{res}{space 2} 870052.6{col 30}{space 2} 670554.9{col 41}{space 1}    1.30{col 50}{space 3}0.212{col 58}{space 4}-544694.5{col 71}{space 3}  2284800
+{txt}{hline 17}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. regress Socialsphere GDP Population Unemploymentrate
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}        21
+{txt}{hline 13}{c +}{hline 34}   F(3, 17)        = {res}  1190.91
+{txt}       Model {c |} {res} 2.9120e+14         3  9.7068e+13   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 1.3856e+12        17  8.1508e+10   {txt}R-squared       ={res}    0.9953
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.9944
+{txt}       Total {c |} {res} 2.9259e+14        20  1.4630e+13   {txt}Root MSE        =   {res} 2.9e+05
+
+{txt}{hline 17}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}    Socialsphere{col 18}{c |} Coefficient{col 30}  Std. err.{col 42}      t{col 50}   P>|t|{col 58}     [95% con{col 71}f. interval]
+{hline 17}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 13}GDP {c |}{col 18}{res}{space 2} .0508393{col 30}{space 2}  .017574{col 41}{space 1}    2.89{col 50}{space 3}0.010{col 58}{space 4} .0137614{col 71}{space 3} .0879173
+{txt}{space 6}Population {c |}{col 18}{res}{space 2} .6671377{col 30}{space 2} .0950245{col 41}{space 1}    7.02{col 50}{space 3}0.000{col 58}{space 4} .4666535{col 71}{space 3} .8676219
+{txt}Unemploymentrate {c |}{col 18}{res}{space 2}  -229902{col 30}{space 2} 299687.3{col 41}{space 1}   -0.77{col 50}{space 3}0.454{col 58}{space 4}-862186.9{col 71}{space 3} 402382.9
+{txt}{space 11}_cons {c |}{col 18}{res}{space 2}  1109595{col 30}{space 2}  1453387{col 41}{space 1}    0.76{col 50}{space 3}0.456{col 58}{space 4} -1956784{col 71}{space 3}  4175973
+{txt}{hline 17}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. histogram Transportandwarehousing , normal title("Распределение: Транспорт") color(blue)
+{txt}(bin={res}4{txt}, start={res}117751.9{txt}, width={res}2691479.2{txt})
+{res}
+{com}. histogram Supplyofelectricitygasstea , normal title("Распределение: Энергетика") color(green)
+{txt}(bin={res}4{txt}, start={res}39115.1{txt}, width={res}774189.2{txt})
+{res}
+{com}. histogram Socialsphere , normal title("Распределение: Социальная сфера") color(orange)
+{txt}(bin={res}4{txt}, start={res}145242.5{txt}, width={res}4519664.4{txt})
+{res}
+{com}. gen year = 2022
+
+. graph bar (mean) Transportandwarehousing Supplyofelectricitygasstea Socialsphere, title("Основные показатели инфраструктуры за 2022 год") ytitle("Средние значения показателей") bar(1, color(navy) lcolor(black) lwidth(medium)) bar(2, color(maroon) lcolor(black) lwidth(medium)) bar(3, color(forest_green) lcolor(black) lwidth(medium)) legend(label(1 "Транспорт и складирование") label(2 "Энергетика") label(3 "Социальная сфера"))
+{res}
+{com}. graph bar (mean) Transportandwarehousing Supplyofelectricitygasstea Socialsphere, title("Сравнение показателей по секторам за 2022 год") ytitle("Значения показателей") bar(1, color(blue)) bar(2, color(green)) bar(3, color(orange)) legend(label(1 "Транспорт и складирование") label(2 "Энергетика") label(3 "Социальная сфера")) blabel(bar, size(medium))
+{res}
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\Nurlan\Desktop\case championship\code.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}10 Nov 2024, 21:46:15
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
